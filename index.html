@@ -1,14 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=en-us>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset=UTF-8>
+    <title>Multiplayer Rocks Paper Scissors</title>
+    <link rel=stylesheet href=https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css>
+    <script src=https://www.gstatic.com/firebasejs/4.12.0/firebase.js></script>
 </head>
 
 <body>
-
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+    <div>
+        <div id=switch><input id=username placeholder=Name>
+            <button id=start>Start</button>
+        </div>
+        <div id=current-turn>
+            <h2></h2>
+        </div>
+        <div>
+            <div id=player1>
+                <h3 id=player1-name>Player1</h3>
+                <ul>
+                </ul>
+                <div id=player1-chosen></div>
+                <div class=outcomes>
+                    <div class=outcome-trackers id=player1-wins></div>
+                    <div class=outcome-trackers id=player1-losses></div>
+                </div>
+            </div>
+            <div id=result>
+                <h2></h2>
+            </div>
+            <div id=player2>
+                <h3 id=player2-name>Player2</h3>
+                <ul>
+                </ul>
+                <div id=player2-chosen></div>
+                <div class=outcomes>
+                    <div class=outcome-trackers id=player2-wins></div>
+                    <div class=outcome-trackers id=player2-losses></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js></script>
+    <script src=app.js></script>
 </body>
 
 </html>
